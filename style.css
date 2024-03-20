@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "AvenirFont";
+  src: url("./assets/font/Avenir\ Next\ \(1\)\ \(1\)\ \(1\)\ \(1\).ttc")
+    format(".ttc");
+}
+
+body {
+  font-family: "AvenirFont", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 1440px;
+  height: 864px;
+  background-color: white;
+  margin: auto;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  background-image: url("./assets/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 100px;
+}
+.right-text-container p {
+  color: #666666;
+}
+
+.right h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40.62px;
+}
+.right p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.shop-all-button {
+  font-size: 12.8px;
+  font-weight: 900;
+  line-height: 17.48px;
+  position: relative;
+}
+
+.shop-all-button::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 170px;
+  height: 1px;
+  background-color: black;
+}
+
+.product-hidden {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-container {
+  display: flex;
+  padding-inline: 100px;
+  gap: 100px;
+  transition: linear 0.2s all;
+}
+.product-container::-webkit-scrollbar {
+  display: none; /* make scrollbar transparent */
+}
+
+.product-card {
+  width: 230px;
+  height: 363px;
+}
+
+.product-image {
+  width: 230px;
+  height: 310px;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+.product-name {
+  font-weight: 400;
+  font-size: 12.8px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+.product-price p {
+  font-weight: 500;
+}
+.product-color {
+  display: flex;
+  gap: 10px;
+}
+.product-color button {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+}
+
+.product-color button.active-color {
+  border: 1px solid black !important;
+}
+.product-container-right-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: 1px solid #0000001a;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+}
+.product-container-right-button:hover {
+  opacity: 1;
+}
